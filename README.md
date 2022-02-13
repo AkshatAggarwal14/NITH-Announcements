@@ -1,2 +1,2 @@
-# NITH Announcements
+## NITH Announcements
 This API fetches the announcements from the [NITH Website](https://www.nith.ac.in) which can further be used in any discord bots or things like that. The API can be accessed [here](https://nith-announcements.deta.dev/).
