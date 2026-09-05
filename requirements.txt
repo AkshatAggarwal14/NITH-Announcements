@@ -1,5 +1,4 @@
 fastapi
-requests
 aiohttp
 beautifulsoup4
-starlette==0.17.1
+uvicorn
