@@ -6,7 +6,7 @@ Deployed on Vercel (Deta is discontinued). Endpoints:
 - `GET /` → list of announcements (legacy path)
 - `GET /api/announcements` → list of announcements
 - `GET /announcements` → alias
-- `GET /docs` → Swagger UI
+- `GET /docs` → Swagger UI (local dev only)
 
 ## Local dev
 
