@@ -29,6 +29,13 @@ async def get_announcements():
         raise HTTPException(status_code=502, detail=f"Failed to fetch NITH site: {e}")
 
 
+# Vercel rewrites every path to /api/index (see vercel.json), so in
+# production the app always sees this path. Define it explicitly.
+@app.get("/api/index")
+async def vercel_entrypoint():
+    return await get_announcements()
+
+
 # Alias
 @app.get("/announcements")
 async def announcements_alias():
